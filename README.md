@@ -84,6 +84,7 @@ The demonstration runs real-time API calls — governed vs. ungoverned — simul
 | 07 | Cybersecurity | Margin collapse — AWS inference costs exceeding product revenue |
 | 08 | Access Equity | Token ceiling crisis — paid subscribers locked out by waste |
 | 09 | Custom | Enter your own real-world situation — IGM governs it live |
+| 10 | Engineering | Offshore wind turbine — structural alert fatigue, 340 alerts/day |
 
 ---
 
