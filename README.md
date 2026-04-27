@@ -69,7 +69,7 @@ Without IGM, the request goes directly to the LLM with no constraints enforced �
 
 **[https://igm-demo.onrender.com](https://igm-demo.onrender.com)**
 
-The demonstration runs real-time API calls — governed vs. ungoverned — simultaneously, across nine real-world scenarios. Watch the governance decision log populate line by line before the LLM responds. See real token counts, real differential, real cumulative environmental and capital savings.
+The demonstration runs real-time API calls — governed vs. ungoverned — simultaneously, across ten real-world scenarios. Watch the governance decision log populate line by line before the LLM responds. See real token counts, real differential, real cumulative environmental and capital savings.
 
 ### Scenarios
 
