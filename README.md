@@ -149,6 +149,85 @@ The IGM originated from the Transformational Accountability and Ethics (TAE) met
 
 ## Contact
 
+## Ambient Ungoverned Inference Drain (AUID)
+
+**AUID** is the hidden CPU load draining battery, energy, and tokens without consent.
+
+**Definition:** The continuous execution of AI inference on user devices through browser-embedded or application-embedded engines, operating without token ceilings, energy measurement, user consent, or audit trails — resulting in measurable CPU load, battery drain, and thermal impact on users who never authorized it.
+
+*Introduced by DeBacco, J. (2026). Submitted to Springer Nature AI and Ethics. USPTO 19/571,156.*
+
+---
+
+### AUID Does Not Wait for You
+
+The most significant finding: **AUID starts the moment your device wakes up — before you open a single application.**
+
+A live Activity Monitor capture taken immediately upon device wake on May 1, 2026 showed:
+
+| Process | CPU % | Classification |
+|---|---|---|
+| spotlight | 48.1% | Apple ML indexing — fires on wake |
+| duetexpertd | 29.4% | Apple Intelligence coordinator |
+| suggestd | 19.0% | Apple suggestion inference daemon |
+| Google Chrome | 10.5% | Chrome AI features activating |
+| Microsoft | 8.6% | Microsoft AI activating on wake |
+| corespeechd | 4.0% | CoreSpeech inference daemon |
+| Grammarly | 2.2% | Continuous ML inference |
+
+**Combined CPU at wake: 20.61% — before any user action.**
+
+---
+
+### Seven Documented AUID Examples
+
+**1 — Mozilla Firefox 141 (August 2025)**
+Background "Inference" process for AI tab grouping ran by default. CPU spikes to 130%. Battery drain. Fans at maximum. Killing the process crashed the browser. Mozilla reversed the rollout only after user complaints — post-hoc governance, not governance by design.
+
+**2 — Google Chrome: Gemini Nano**
+Chrome automatically downloads and runs Gemini Nano locally during updates. Executes inference for summarization, writing assistance, and smart replies. No token ceiling. No energy measurement. No consent required.
+
+**3 — Microsoft Copilot + Edge WebView2**
+Runs in background on Windows 11, consuming 250–500MB of memory while idle, causing CPU spikes when not in use. Disabling Copilot immediately reclaims approximately 200MB of system memory.
+
+**4 — Microsoft Windows Recall + Phi Silica**
+Continuously analyzes all user activity using a local AI model on the device NPU — default-on. Made opt-in only after user backlash.
+
+**5 — Browser Extensions with Persistent Background Inference**
+Extensions using Transformers.js and WebLLM load multi-gigabyte AI models as persistent service workers across all tabs — by design, because reloading them repeatedly is impractical.
+
+**6 — Grammarly Desktop**
+Runs continuous local ML inference across every application on your device — word processors, email, browsers — without any user-initiated request. No token ceiling. No energy record.
+
+**7 — Apple Intelligence: generativeexperiencesd, textunderstandingd, siriinferenced**
+Three persistent Apple Intelligence daemons run continuously on macOS and iOS. All execute background inference without token ceilings, energy measurement, or per-session consent. Visible in Activity Monitor across multiple captures.
+
+---
+
+### What Every AUID Example Has in Common
+
+- **No token ceiling** — no limit on computational resources per inference event
+- **No energy measurement** — no record of joules consumed on your device
+- **No consent** — default-on, requiring users to actively disable
+- **No audit trail** — no verifiable record of what ran, when, or what it consumed
+
+This is not a single vendor problem. It is a systemic absence of governance at the browser and device inference boundary — across every major browser, on every major operating system, on hundreds of millions of devices simultaneously.
+
+---
+
+### The IGM Addresses All Four AUID Failures
+
+| AUID Failure | IGM Module |
+|---|---|
+| No consent boundary | Input Processing — authenticated authorization required |
+| No token ceiling | GATE — hard ceiling enforced before inference |
+| No energy measurement | TTP Monitor — joule measurement per inference |
+| No clean termination | Pipeline architecture — discrete modules, clean boundaries |
+
+**The DeBacco Rule** — governed inference within ~1 joule — provides the reference energy boundary that AUID currently has no equivalent of.
+
+*DeBacco, J. (2026). Ambient Ungoverned Inference Drain (AUID): Naming and Addressing the Hidden CPU Load on User Devices and the Case for Constraint-First Architecture. Submitted to AI and Ethics, Springer Nature. USPTO Provisional Application 19/571,156.*
+
 **DeBacco Nexus LLC**  
 info@debacconexus.com  
 [https://igm-demo.onrender.com](https://igm-demo.onrender.com)
