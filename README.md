@@ -1,7 +1,7 @@
 # Inference Governance Module (IGM)
 ### Live Demonstration · DeBacco Nexus LLC
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-igm--demo.onrender.com-00e5a0?style=for-the-badge)](https://igm-demo.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-igm--demo.up.railway.app-00e5a0?style=for-the-badge)](https://igm-demo-production.up.railway.app)
 [![Patent Pending](https://img.shields.io/badge/Patent%20Pending-USPTO%2019%2F571%2C156-4d9fff?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-Proprietary-ff4d6a?style=for-the-badge)]()
 
@@ -230,7 +230,7 @@ This is not a single vendor problem. It is a systemic absence of governance at t
 
 **DeBacco Nexus LLC**  
 info@debacconexus.com  
-[https://igm-demo.onrender.com](https://igm-demo.onrender.com)
+igm-demo-production.up.railway.app.
 
 ---
 
